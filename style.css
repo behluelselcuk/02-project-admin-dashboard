@@ -1,0 +1,214 @@
+:root {
+    --body-bg-color: #E2E8F0;
+    --sb-bg-color: #1992D4;
+    --header-bg-color: #fff;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: .5fr 4fr;
+    background-color: var(--body-bg-color);
+    box-sizing: border-box;
+}
+
+
+
+/* ====================================================================================================================================================================================================================================================================== */
+
+
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: var(--sb-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 35px;
+    gap: 50px;
+    color: white;
+}
+
+.sidebar-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sidebar-header img {
+    height: 50px;
+}
+
+.sidebar-menu-1,
+.sidebar-menu-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+/* ====================================================================================================================================================================================================================================================================== */
+
+
+
+/* ===== HEADER ===== */
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    background-color: var(--header-bg-color);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 25px 50px;
+    box-shadow: 0px 0px 50px black;
+}
+
+/* === HEADER 1. HÄLFTE === */
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.search-section > i {
+    font-size: 2rem;
+}
+
+.search-section > input {
+    font-size: 2rem;
+    background-color: var(--body-bg-color);
+    border: none;
+    border-radius: 25px;
+}
+
+.header-btns {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header-btns > i {
+    font-size: 2rem;
+}
+
+.img-1 {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/ogie-TCNYUg_R9xU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.header-btns > h3 {
+    font-size: 1.5rem;
+}
+
+/* === HEADER 2. HÄLFTE === */
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-2_1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-2_1-text p, 
+.header-2_1-text h2 {
+    margin: 0;
+}
+
+.header-2_2 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-2_2 button {
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    background-color: var(--sb-bg-color);
+    color: var(--header-bg-color);
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+}
+
+#header-img {
+    width: 75px;
+    height: 75px;
+}
+
+
+
+/* ====================================================================================================================================================================================================================================================================== */
+
+
+
+/* ===== MAIN-CONTENT ===== */
+.main-content {
+    margin: 15px;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    background-color: var(--body-bg-color);
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.projects-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 15px;
+}
+
+.one-project {
+    background-color: var(--header-bg-color);
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.announcements-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    border: 1px solid grey;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.trending-div {
+    display: flex;
+    flex-direction: column;
+}
