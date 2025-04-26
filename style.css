@@ -71,7 +71,7 @@ body {
     align-items: center;
     gap: 20px;
     padding: 25px 50px;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0 5px 15px grey;
 }
 
 /* === HEADER 1. HÄLFTE === */
@@ -110,7 +110,7 @@ body {
 .img-1 {
     width: 50px;
     height: 50px;
-    background-image: url(./img/ogie-TCNYUg_R9xU-unsplash.jpg);
+    background-image: url(./img/logo-behluel.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,12 +171,23 @@ body {
     grid-column: 2 / 3;
     grid-row: 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 550px));
     gap: 15px;
     background-color: var(--body-bg-color);
+    margin: 50px 25px;
 }
 
+.main-content > div > h3 {
+    font-size: 1.5rem;
+}
+
+.one-project,
+.announcements-div,
+.trending-div {
+    box-shadow: 5px 5px 15px grey;
+}
+
+/* === PROJECTS === */
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -184,33 +195,105 @@ body {
 
 .projects-div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 550px));
+    gap: 25px;
 }
 
 .one-project {
     background-color: var(--header-bg-color);
+    padding: 20px 40px;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
+.project-text h3,
+.project-text p {
+    margin: 0;
+}
+
+.project-text p{
+    color: grey;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+}
+
+.buttons button {
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+/* === ANNOUNCEMENTS === */
 .announcements {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .announcements-div {
     display: flex;
     flex-direction: column;
+    background-color: var(--header-bg-color);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 40px;
+}
+
+.announcements-div h4,
+.announcements-div p {
+    margin: 0;
 }
 
 .divider {
     border: 1px solid grey;
+    margin: 15px 0;
 }
 
+/* === TRENDING === */
 .trending {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 2;
+    grid-row: 2;
 }
+
 .trending-div {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    background-color: var(--header-bg-color);
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 40px;
+}
+
+#tegan {
+    background-image: url(./img/logo-tegan.jpg);
+}
+
+#kendall {
+    background-image: url(./img/logo-kendall.png);
+}
+
+#alex {
+    background-image: url(./img/logo-alex.png);
+}
+
+.trending-div > li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.trending-li-info > h5,
+.trending-li-info > p {
+    margin: 0;
+}
+
+.trending-li-info > p {
+    color: grey;
 }
