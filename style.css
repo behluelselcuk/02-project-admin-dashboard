@@ -31,6 +31,7 @@ body {
     color: white;
 }
 
+/* === SIDEBAR-HEADER === */
 .sidebar-header {
     display: flex;
     gap: 15px;
@@ -41,6 +42,7 @@ body {
     height: 50px;
 }
 
+/* === SIDEBAR-MENUES === */
 .sidebar-menu-1,
 .sidebar-menu-2 {
     display: flex;
