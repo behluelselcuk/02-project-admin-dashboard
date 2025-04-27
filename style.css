@@ -167,11 +167,10 @@ body {
 
 /* ===== MAIN-CONTENT ===== */
 .main-content {
-    margin: 15px;
     grid-column: 2 / 3;
     grid-row: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 550px));
+    grid-template-columns: 3fr 1fr;
     gap: 15px;
     background-color: var(--body-bg-color);
     margin: 50px 25px;
@@ -195,7 +194,7 @@ body {
 
 .projects-div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 550px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
     gap: 25px;
 }
 
@@ -206,7 +205,9 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
+    height: 250px;
 }
 
 .project-text h3,
@@ -233,7 +234,6 @@ body {
 /* === ANNOUNCEMENTS === */
 .announcements {
     grid-column: 2;
-    grid-row: 1;
 }
 
 .announcements-div {
@@ -258,7 +258,6 @@ body {
 /* === TRENDING === */
 .trending {
     grid-column: 2;
-    grid-row: 2;
 }
 
 .trending-div {
